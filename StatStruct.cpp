@@ -140,29 +140,29 @@ void loadString(std::ifstream& file, line& records)
     records.date = "N/A";
     records.amount = 0.0;
     file >> records.firstName;
-    if (file.eof() || records.firstName == "N/A")
+    /*if (file.eof() || records.firstName == "N/A")
     {
         records.secondName = "N/A";
         records.date = "N/A";
         records.amount = 0.0;
     }
     else
-    {
+    {*/
         file >> records.secondName;
-        if (file.eof() || records.secondName == "N/A")
+        /*if (file.eof() || records.secondName == "N/A")
         {
             records.date = "N/A";
             records.amount = 0.0;
         }
         else
-        {
+        {*/
             file >> records.date;
-            if (file.eof())
+            /*if (file.eof())
                 records.amount = 0.0;
-            else
+            else*/
                 file >> records.amount;
-        }
-    }
+        /* }
+    }*/
 }
 
 // Главная функция. Здесь организовано консольное меню для работы с ведомостью.
